@@ -1,0 +1,198 @@
+:root {
+    --bg-color: #90e0ef;
+    --content-text: #00b4d8;
+    --content-text-Strong: #0077b6;
+    --content-text-dark: #023e8a;
+    --content-text-darkest: #03045e;
+    --yellow: #ffc107;
+
+}
+.NavHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--content-text-dark);
+    height: 30px;
+}
+.NavHeader a nav-link{
+    margin: 0 30px;
+    padding: 0 30px;
+    text-decoration: none;
+    /* background-color: purple; */
+}
+.NavHeader a div{
+   width: 100%;
+   height: 100%;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav a div:first-of-type{
+    /* background-color: purple; */
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0 0;
+}
+.footer{
+    height: 25px;
+    background-color: var(--content-text-dark);
+}
+.footer p{
+    color: white;
+    margin: 0 50px;
+    font-size: 14px;
+}
+
+.navbar {
+    background-color: var(--content-text-dark);
+}
+.nav-link{
+    text-align: center;
+}
+.navbar-brand, .nav-link{
+    text-transform: uppercase;
+}
+.navbar-brand, .nav-link, .footer p{
+    color: var(--yellow);
+}
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+    color: var(--yellow)!important;
+}
+
+.jumbotron{
+    margin-top: 42px;
+    height: 50vh;
+    background-color: var(--bg-color);
+}
+
+.jumboCol1{
+    background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=vasily-koloda-8CqDvPuo_kI-unsplash.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+.jumboCol2{
+    background: url(https://images.unsplash.com/photo-1551894538-e0dcc16c5fc1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=guille-alvarez-iN17w6t7XeQ-unsplash.jpg);
+    height: 40vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.row {
+    margin: 0 15px;
+}
+
+.homeContainer {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.homeCard{
+    background-color: var(--content-text-dark);
+    width: 45%;
+    height: 150px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .homeContainer {
+        flex-direction: column;
+        height: 650px;
+    }
+    .homeCard{
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .table-responsive-md{
+        display: table !important;
+    }
+
+    .LblWidth{
+        width: 100% !important;
+    }
+}
+
+/* table.table.table-hover.table-dark {
+    margin-top: 42px 0 0;
+} */
+
+.SecMarginTop{
+    margin: 42px 0 0;
+}
+
+.LblWidth {
+    width: 500px;
+}
+
+/* Form Feedback */
+#studentForm{
+    background: url(https://images.unsplash.com/photo-1521428787192-bf1af117fe60?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=aideal-hwa-Qac5z_EAUec-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#courseForm{
+    background: url(https://images.unsplash.com/photo-1543227530-aed8bd60bb52?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=francesco-ungaro-ZQmfqGAEmXA-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 50px 0;
+}
+.cLbl{ color: white;}
+
+.invalid-feedback ,.valid-feedback {
+    font-size: 13px;
+    display: block !important;
+    background-color: #343a40;
+    width: 140px;
+    margin: auto auto !important;
+}
+.invalid-feedback { color: #ff0018 !important;}
+
+/* Table Edit */
+.table{
+    margin: 30px 0;
+}
+
+ .studedit, .studsave, .studdelete, .coursedelete, .courseedit, .coursesave {
+    outline: none;
+    background: none;
+    border: none;
+}
+.studedit, .studsave, .studdelete, .coursedelete, .courseedit, .coursesave {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.studsave, .coursesave {
+    display: none;
+    background: #32ad60;
+    color: #fff;
+}
+.studsave:hover, .coursesave:hover {
+    background: #27854a;
+}
+.studedit, .courseedit {
+    background: #2199e8;
+    color: #fff;
+}
+.studedit:hover, .courseedit:hover {
+    background: #147dc2;
+}
+.studdelete, .coursedelete {
+    background: #ec5840;
+    color: #fff;
+}
+.studdelete:hover, .coursedelete:hover {
+    background: #e23317;
+}

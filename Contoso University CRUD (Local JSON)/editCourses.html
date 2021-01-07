@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md justify-content-center fixed-top">
+        <a class="navbar-brand" href="#">LOGO</a>
+
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="fill:#ffc107;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="editStudent.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="editCourses.html">Courses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="SecMarginTop">
+        <form id="courseForm" class="container-fluid text-center">
+            <div class="form-group"><label class="LblWidth cLbl">Course ID: <input class="form-control" type="text" placeholder="Course ID" name="courseID" required pattern="^[A-Za-z\S+]{1,25}$"></label>
+                <div class="feedback"></div>
+            </div>
+            <div class="form-group"><label class="LblWidth cLbl">Course Name: <input class="form-control" type="text" placeholder="Course Name" name="courseName" required pattern="^[A-Za-z\S+]{3,50}$"></label>
+                <div class="feedback"></div>
+            </div>
+            <div class="form-group"><input id="courseAdd" type="button" value="Add Course"></div>
+        </form>
+    </section>
+
+    <table class="table table-responsive-md table-hover table-dark courseTbl">
+        <thead>
+          <tr class="bg-primary">
+            <th scope="col">ID</th>
+            <th scope="col">Course Name</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+
+    <section class="footer">
+        <p>&copy; Contoso University</p>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- //json-server --watch db.json -->
+    <script src="main.js"></script>
+</body>
+</html>

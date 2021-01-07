@@ -1,0 +1,57 @@
+{
+  "studentCollection": [
+    {
+      "id": "1",
+      "name": "Tyler",
+      "enlistedDate": "2020-01-08",
+      "courseName": "HTML",
+      "gender": "Male"
+    },
+    {
+      "id": "2",
+      "name": "Terry",
+      "enlistedDate": "2021-01-06",
+      "courseName": "JS",
+      "gender": "Male"
+    },
+    {
+      "id": "3",
+      "name": "Jade",
+      "enlistedDate": "2020-05-12",
+      "courseName": "CSS",
+      "gender": "Female"
+    },
+    {
+      "id": "4",
+      "name": "William",
+      "enlistedDate": "2020-12-30",
+      "courseName": "JS",
+      "gender": "Male"
+    },
+    {
+      "id": "5",
+      "name": "Jessica",
+      "enlistedDate": "2020-12-29",
+      "courseName": "CSS",
+      "gender": "Female"
+    }
+  ],
+  "coursesCollection": [
+    {
+      "id": "HTML5",
+      "courseName": "HTML"
+    },
+    {
+      "id": "CSS3",
+      "courseName": "CSS"
+    },
+    {
+      "id": "ES6",
+      "courseName": "JS"
+    },
+    {
+      "id": "Re17",
+      "courseName": "React JS"
+    }
+  ]
+}

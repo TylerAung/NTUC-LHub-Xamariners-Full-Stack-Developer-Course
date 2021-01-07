@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">    
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md justify-content-center fixed-top">
+        <a class="navbar-brand" href="#">LOGO</a>
+
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="fill:#ffc107;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="editStudent.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="editCourses.html">Courses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7 col-md-6 jumboCol1">
+                    <h5>Previous Graduation Record</h5>
+                </div>
+                <div class="col-5 col-md-6 jumboCol2">
+                    <p>Upcoming Graduation</p>
+                    <p>Joelle is Excited about her graduation</p>
+                </div>
+            </div>
+           <!-- https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=vasily-koloda-8CqDvPuo_kI-unsplash.jpg -->
+            <!-- https://images.unsplash.com/photo-1593985887762-955dccf2b71e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=christine-von-raesfeld-fjptyBGkKSM-unsplash.jpg -->
+        </div>
+    </div>
+
+    <section class="homeContainer">
+        <div class="homeCard card-body">
+            <h5 class="card-title text-warning">Total No of Students</h5>
+              <p id="studentCount" class="card-text text-white h3"></p>
+              <a href="editStudent.html" class="card-link text-warning">Edit Students</a>
+        </div>
+        <div class="homeCard card-body">
+            <h5 class="card-title text-warning">Total No of Courses</h5>
+              <p id="courseCount" class="card-text text-white h3"></p>
+              <a href="editCourses.html" class="card-link text-warning">Edit Courses</a>
+        </div>
+
+        <div class="homeCard card-body">
+            <h5 class="card-title text-warning">Gender Breakdown</h5>
+              <p id="genderCount" class="card-text text-white h4"></p>
+              <a href="editStudent.html" class="card-link text-warning">Edit Students</a>
+        </div>
+
+        <div class="homeCard card-body">
+            <h5 class="card-title text-warning">Course Gender Breakdown</h5>
+              <p id="courseSexCount" class="card-text text-white h60"></p>
+              <a href="editStudent.html" class="card-link text-warning">Edit Courses</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>&copy; Contoso University</p>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
