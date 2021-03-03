@@ -1,0 +1,29 @@
+﻿@model List<CustomerApp.Models.Customer>
+@* Helps to build intellisense with model, without list<>, will have error with Model keyword *@
+@{
+    Layout = null;
+}
+<form action="/Customer/Search" method="post">
+    Name :- <input type="text" name="CustName" value="" />
+    <input type="submit" value="Search" />
+</form>
+<table>
+    <tr>
+        
+        <td>ID</td>
+        <td>Name</td>
+        <td>Address</td>
+    </tr>
+    @* All Cust will come in as a reserved keyword Model *@
+    @if(Model != null){ @*If model have values(truthy) than display table*@
+        @foreach (var cust in Model)
+        {
+            <tr>
+                <td>@cust.Id</td>
+                <td>@cust.CustName</td>
+                <td>@cust.CustAddress</td>
+            </tr>
+        }
+    }
+</table>
+<a href="/">Back</a>
